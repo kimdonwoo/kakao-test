@@ -161,7 +161,7 @@ public class CartRestControllerTest extends MyRestDoc {
     @DisplayName("동일 아이템 주문 에러 테스트")
     @WithUserDetails(value = "ssarmango@nate.com")
     @Test
-    public void update_nothing_fail_test() throws Exception {
+    public void update_same_item_test() throws Exception {
         // given -> cartId [1번 5개,2번 1개,3번 5개]가 teardown.sql을 통해 들어가 있음
         List<CartRequest.UpdateDTO> requestDTOs = new ArrayList<>();
         CartRequest.UpdateDTO item = new CartRequest.UpdateDTO();
